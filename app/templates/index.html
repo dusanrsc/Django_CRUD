@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,6 +10,17 @@
 		<title>Home</title>
 	</head>
 	<body>
-		<h1>Welcome To DjangoCRUD Website!</h1>
+		<div class="container"><br/><br/>
+			<h1 class="text bg-primary text-light">Welcome To DjangoCRUD Website!</h1>
+			<h2 class="text bg-primary text-light">This DjangoCRUD Website Is About Events!</h2><br/>
+			<h3 class="text bg-primary text-light">In DjangoCRUD website you are able to: Create, Read, Update & Delete!</h3>
+
+			<h4 class="text bg-light text-dark"> • Events have couple main components such as: Event Title, Event Location, Event Description, Event starting Time, Event starting Date, Event Duration and Free Places for Event!</h4><br/>
+
+			<h3 class="text bg-primary text-light">What else can you do with DjangoCRUD?</h3>
+			<h4 class="text bg-light text-dark"> • DjangoCRUD is an open-source website software that you can use for your own purpose completely free. Not just use, you can download it, make changes to it, sell it and so on!</h4>
+
+		</div>
 	</body>
 </html>
+{% endblock %}

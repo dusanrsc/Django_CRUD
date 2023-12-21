@@ -19,4 +19,11 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
+
+    path("create_event", views.create_event, name="create_event"),
+    path("read_event", views.read_event, name="read_event"),
+    path("update_event/<int:id>", views.update_event, name="update_event"),
+    path("delete_event/<int:id>", views.delete_event, name="delete_event"),
+
+    path("search_event/", views.search_event, name="search_event"),
 ]
