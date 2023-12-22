@@ -41,13 +41,3 @@ def delete_event(request, id):
 	event = Event.objects.get(pk=id)
 	event.delete()
 	return redirect('index')
-
-# search event by title view
-def search_event(request):
-	if request.method == "POST":
-		searched = request.POST["searched"]
-		event = Event.objects.filter(title__contains=searched)
-
-		return render(request, "search_event.html", {"searched": searched, "event": event})
-	else:
-		return render(request, "search_event.html", {})

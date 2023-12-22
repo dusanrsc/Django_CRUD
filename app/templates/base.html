@@ -19,13 +19,9 @@
         <a class="nav-link" href="{% url 'read_event' %}">Read Events</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-1">
-    	<input class="form-control mr-sm-2" type="search" name="searched" placeholder="Search Events by Title" aria-label="Search">
-    	<a href="{% url 'search_event' %}" class="btn btn-outline-light">Search</a>
-    </form>
   </div>
 </nav>
-<!-- navbar -->
+<!-- endnavbar -->
 
 {% block content %}
 {% endblock %}

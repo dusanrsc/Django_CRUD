@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Event(models.Model):
-	title = models.CharField(max_length=15)
+	title = models.CharField(max_length=20)
 	location = models.CharField(max_length=20)
 	description = models.TextField(max_length=25)
 	date = models.DateField(max_length=15)
